@@ -4,8 +4,8 @@ import React from 'react'
 const NavBar = () => {
     return (
         <header className='bg-gray-400 text-white'>
-            <nav className='flex justify-between items-center w-full px-10 py-4'>
-                <h1>Logo</h1>
+            <nav className='flex justify-between items-center w-full px-10 py-3'>
+                <Link href='/'>Logo</Link>
                 <div className='flex gap-8'>
                     <Link href='/'>Home</Link>
                     <Link href = '/CreateUser'>Create User</Link>
