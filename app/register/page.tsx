@@ -1,5 +1,6 @@
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import Link from "next/link"
 
 
 const Register = async () => {
@@ -30,6 +31,10 @@ const Register = async () => {
                     <Input id="password" name="password" type="password" placeholder="********" />
                 </Label>
                 <button type="submit" className="w-1/2 bg-[#121212] hover:bg-[#121212]/90 text-white font-bold py-2 px-4 rounded mx-auto block">Register &rarr;</button>
+                <p>
+                    <span className="text-sm">Already have an account?</span>
+                    <Link href="/login" className="text-sm ml-2 text-blue-500 hover:text-blue-700">Login</Link>
+                </p>
             </form>
         </div>
     )
