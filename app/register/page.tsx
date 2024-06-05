@@ -1,3 +1,4 @@
+import React from "react";
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
@@ -16,11 +17,11 @@ const Register = async () => {
             <form className="mt-6 space-y-6">
                 <Label htmlFor="firstName">
                     <span>First Name</span>
-                    <Input id="firstName" type="text" name="firstName" placeholder="John" required/>
+                    <Input id="firstName" type="text" name="firstName" placeholder="John" required />
                 </Label>
                 <Label htmlFor="lastName">
                     <span>Last Name</span>
-                    <Input id="lastName" type="text" name="lastName" placeholder="Doe" required/>
+                    <Input id="lastName" type="text" name="lastName" placeholder="Doe" required />
                 </Label>
                 <Label htmlFor="email">
                     <span>Email</span>
