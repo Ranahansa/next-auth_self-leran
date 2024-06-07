@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Link from 'next/link'
 import { IconBrandGithub, IconBrandGoogle } from '@tabler/icons-react'
+import { login } from '@/action/user'
 
 const Login = () => {
     return (
@@ -10,7 +11,7 @@ const Login = () => {
             <h1 className="text-3xl font-bold">
                 Welcome To Login
             </h1>
-            <form className="mt-6 space-y-6">
+            <form className="mt-6 space-y-6" action = {login}>
                 <Label htmlFor="email">
                     <span>Email</span>
                     <Input id="email" name="email" type="email" placeholder="jWQpN@example.com" />
