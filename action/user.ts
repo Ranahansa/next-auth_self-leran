@@ -5,6 +5,7 @@ import { User } from "@/models/User";
 import { redirect } from "next/navigation";
 import { hash } from "bcryptjs";
 import { signIn } from "@/auth";
+import { CredentialsSignin } from "next-auth";
 
 
 const login = async (formData: FormData) => {
@@ -19,7 +20,8 @@ const login = async (formData: FormData) => {
         });
 
     } catch (error) {
-        throw new Error("Invalid email or password");
+        const someError = error as CredentialsSignin;
+    return someError.cause;
     }
 
     redirect("/");
