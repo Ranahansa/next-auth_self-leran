@@ -25,6 +25,7 @@ const Dashboard = () => {
                             <CardHeader className='flex flex-row items-center justify-between pb-2'>
                                 <CardTitle className='text-sm font-medium'>Recent Sign-ups</CardTitle>
                             </CardHeader>
+                            {/* // TODO: Add recent sign-ups table */}
                             <CardContent>
                                 <Table>
                                     <TableHeader>
